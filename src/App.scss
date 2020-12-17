@@ -1,0 +1,151 @@
+$purp: #181818;
+$dpurp: #7c7c7c;
+$yell: #fff;
+
+@import url("https://fonts.googleapis.com/css?family=Alata&display=swap");
+
+body {
+  background: $yell;
+  padding: 0;
+  font-family: Monument Extended;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+} 
+
+
+p {
+  font-size: 1rem;
+  line-height: 24px;
+  font-family: ABC Favorit Trial;
+  color: #7c7c7c;
+}
+
+.sm-btn {
+  margin: 0 20px;
+  height: 38px;
+  width: 38px;
+  border: 2px solid #7c7c7c;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 18px;
+  }
+}
+
+.sm-text {
+  margin: 0 20px;
+  height: 38px;
+  width: 38px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 18px;
+  }
+}
+
+.header {
+  height: 96px;
+  margin: 8px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  opacity: 0;
+  h5 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 0.75rem;
+    letter-spacing: 0.05rem;
+    margin: 0 auto;
+  }
+}
+
+.sectionFirst {
+  background: $yell;
+  position: relative;
+  padding: 0 24px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  .pic {
+    height: 300px;
+    width: 100%;
+    background: #f0f1f2;
+    box-sizing: border-box;
+    border-radius: 36px;
+    margin: 0 auto 24px;
+    overflow: hidden;
+    opacity: 0;
+    img {
+      width: 100%;
+    }
+  }
+  h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 8px 0;
+    transition: all 500ms ease-out;
+    opacity: 0;
+  }
+  p{
+    opacity: 0;
+  }
+}
+
+.sectionSecond {
+  background: $purp;
+  height: 700px;
+  padding: 60px 24px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  color: #fff;
+  position: relative;
+  opacity: 0;
+  &:after {
+    content: "";
+    position: absolute;
+    background: $dpurp;
+    height: 600px;
+    width: 100px;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+  }
+  .inner {
+    position: relative;
+     top: 60px;
+    h3 {
+      margin: 8px 0;
+      opacity: 1;
+      font-size: 1.7rem;
+      font-weight: 9-700;
+    }
+    p {
+      opacity: 1;
+    }
+    .btn-row {
+      opacity: 1;
+      a {
+        background: $dpurp;
+        width: 100%;
+        border-radius: 18px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: #fff;
+        text-transform: capitalize;
+        font-weight: 600;
+        margin-top: 48px;
+      }
+    }
+  }
+}
